@@ -19,7 +19,7 @@ $oExcel->getActiveSheet()->setCellValueByColumnAndRow(2, 3, 'mark@yahoo.com');
 
 $objWriter = PHPExcel_IOFactory::createWriter($oExcel, 'Excel5');
 
-header('Content-type: application/vnd.ms-excel');
+header('Content-type: text/csv');
 header('Content-Disposition: attachment; filename="export_'. date('Y-m-d').'.csv"');
 header("Pragma: no-cache");
 header("Expires: 0");
